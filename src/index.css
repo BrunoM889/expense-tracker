@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input {
+  outline: none;
+  background: #18162b;
+  width: 100%;
+  @apply rounded;
+  height: 44px;
+  @apply px-3 pb-[2px];
+}
+
+*::-webkit-scrollbar {
+  width: 3px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #ffffff1e;
+}
+*::-webkit-scrollbar-thumb:active {
+  background-color: #ffffff1e;
+}
+
+.charge {
+  animation: charge 0.5s ease-in-out;
+}
+@keyframes charge {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeOut {
+  animation: fadeOut 0.5s ease-in-out;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
